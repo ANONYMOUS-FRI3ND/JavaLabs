@@ -168,16 +168,16 @@ public class Main  {
             }
         }
 
-        var sbornikCitat = new LinkedList<Games>();
-        var sbornikAnekdotov = new LinkedList<Films>();
+        var Games = new LinkedList<Games>();
+        var Films = new LinkedList<Films>();
         for (GetSet col : collections) {
             if (col instanceof Games) {
-                sbornikCitat.add((Games) col);
+                Games.add((Games) col);
                 continue;
             }
 
             else if (col instanceof Films) {
-                sbornikAnekdotov.add((Films) col);
+                Films.add((Films) col);
                 continue;
             }
         }
